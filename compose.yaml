@@ -1,0 +1,16 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: interview-data-warehouse
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${SA_PASSWORD:-InterviewDemo!2026}
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./datasets:/var/opt/mssql/import:ro
+      - sqlserver-data:/var/opt/mssql
+
+volumes:
+  sqlserver-data:
