@@ -1,4 +1,4 @@
-# Sales Data Warehouse | Interview Demo
+# Sales Data Warehouse
 
 An end-to-end SQL Server warehouse that combines CRM and ERP sales data into a clean, analytics-ready star schema. It runs locally with Docker and includes a recruiter-friendly demo script, data-quality checks, and documented production next steps.
 
