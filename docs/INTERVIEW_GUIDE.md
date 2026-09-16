@@ -1,7 +1,3 @@
-# Interview Demo Guide
-
-## 60-second project summary
-
 “I built a SQL Server sales warehouse that turns separate CRM and ERP extracts into a reporting-ready star schema. Raw files land unchanged in Bronze, Silver applies data-quality rules and standardization, and Gold exposes customer and product dimensions plus a sales fact view. The model is designed so analysts can answer revenue, product, and customer questions without having to understand the source-system quirks.”
 
 ## Live demo sequence
